@@ -20,7 +20,7 @@ public class DirectionMotor {
 	public final static int maxAngle = 43; // 132 degrés = 43 degré du cercle
 	public final static double wheelBase = 13d; // 13 cm, l'empattement (espace entre roues
 							// arrières et avant)
-	private static int currentAngleDestination;
+	private static int currentAngleDestination = 0;
 
 	public DirectionMotor() {
 		directionMotor = new EV3MediumRegulatedMotor(MotorPort.A);
